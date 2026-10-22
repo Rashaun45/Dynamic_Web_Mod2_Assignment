@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+ <script>
+// Template given
+
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+// Change from string to object 
+const employeedata = JSON.parse(text);
+
+const data = document.getElementById("demo");
+
+// interation
+let workers = "";
+
+data.employees.forEach (employee => {
+    workers += `<li>${employee.firstName} ${employee.lastName}</li>`;
+});
+data.innerHTML = `<ul>${workers}</ul>`;
+
+
+</script>
+    
+</body>
+</html>
