@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Fun with Forms</h1>
+        <form id="form">
+            <fieldset>
+                <legend>Billing Information</legend>
+            <div class="grid">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            
+                <label for="state">State/Province</label>
+                <input type="text" id="state" name="state">
+                      
+                <label for="zip">Postal Code</label>
+                <input type="text" id="zip" name="zip">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="JA">Jamaica</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                </select>
+                 
+                 <span class="lbl">Payment<br>Method</span>
+                 <span class="opts">
+                        <label class="opt"><input type="radio" id="PayPal" name="paymentmethod" value="PayPal"> PayPal</label>
+                        <label class="opt"><input type="radio" id="visa" name="paymentmethod" value="visa"> Visa</label>
+                        <label class="opt"><input type="radio" id="masterCard" name="paymentmethod" value="masterCard"> MasterCard</label>
+                    </span>
+ 
+                    <div class="card">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" disabled>
+ 
+                        <label for="expDate">Expiration Date</label>
+                        <input type="text" id="expDate" name="expDate" disabled>
+                    </div>
+            </div>
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

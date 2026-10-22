@@ -1,0 +1,80 @@
+body {
+    background: #fcf9f5;
+    font-family: "Trebuchet MS", "Lucida Grande", Arial, sans-serif;
+    color: #555;
+    margin: 0;
+}
+main { max-width: 780px; margin: 30px auto; padding: 0 20px; }
+
+/* Heading */
+h1 {
+    font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    font-stretch: condensed;
+    font-size: 1.9rem;
+    color: #333;
+    margin: 0 0 28px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #888;
+}
+
+/* Billing Information box */
+fieldset { border: 1px solid #ccc; padding: 24px 28px 22px; margin: 0; }
+legend { font-size: 0.85rem; color: #555; padding: 0 3px; }
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    column-gap: 20px;
+    row-gap: 12px;
+    align-items: center;
+}
+
+label, .lbl {
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    max-width: 370px;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 4px 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-size: 1rem;
+}
+input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #6aa0e0;
+    box-shadow: 0 0 4px 1px #8fb8ec;
+}
+
+select { width: 190px; height: 24px; font-size: 0.75rem; }
+
+/* Payment method */
+.lbl { align-self: start; }
+.opts { align-self: start; }
+.opt {
+    display: inline;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1rem;
+    margin-right: 6px;
+}
+.opt input { margin: 0 4px 0 0; }
+
+/* Card fields */
+.card {
+    grid-column: 1 / -1;
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: 170px 220px;
+    column-gap: 20px;
+    row-gap: 8px;
+    align-items: center;
+}
