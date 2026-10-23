@@ -78,3 +78,7 @@ select { width: 190px; height: 24px; font-size: 0.75rem; }
     row-gap: 8px;
     align-items: center;
 }
+
+/* error messages */
+label.error { display: block; grid-column: 2; text-align: left; text-transform: none; letter-spacing: 0; color: #c0392b; font-size: 0.8rem; margin-top: 2px; }
+input.error, select.error { border: 1px solid #c0392b; }
