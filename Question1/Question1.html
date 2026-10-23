@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        Module 2 - Assignment 2 - Question 1
+        Group members: Sherona, Romain, Lennox, Brit
+        Lennox - JSON.parse and template literal list
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question 1</title>
@@ -19,15 +24,15 @@ let text = '{ "employees" : [' +
 // Change from string to object 
 const employeedata = JSON.parse(text);
 
-const data = document.getElementById("demo");
+const demo = document.getElementById("demo");
 
 // interation
 let workers = "";
 
-data.employees.forEach (employee => {
+employeedata.employees.forEach(employee => {
     workers += `<li>${employee.firstName} ${employee.lastName}</li>`;
 });
-data.innerHTML = `<ul>${workers}</ul>`;
+demo.innerHTML = `<ul>${workers}</ul>`;
 
 
 </script>

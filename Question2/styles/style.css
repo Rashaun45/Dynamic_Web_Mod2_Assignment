@@ -1,3 +1,9 @@
+/*
+    Module 2 - Assignment 2 - Question 2
+    Group members: Sherona, Romain, Lennox, Brit
+    Lennox - form layout styles
+    Romain - error message styles (bottom of file)
+*/
 body {
     background: #fcf9f5;
     font-family: "Trebuchet MS", "Lucida Grande", Arial, sans-serif;
@@ -90,3 +96,5 @@ input.error, select.error { border: 1px solid #c0392b; }
 .same { display: block; text-align: left; text-transform: none; letter-spacing: 0; font-size: 1rem; margin-bottom: 12px; }
 #shippingFields { margin-top: 8px; }
 fieldset + fieldset { margin-top: 20px; }
+
+input[type="submit"] { justify-self: start; padding: 6px 18px; cursor: pointer; }
