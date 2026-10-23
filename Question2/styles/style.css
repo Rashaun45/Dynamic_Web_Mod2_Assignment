@@ -82,3 +82,11 @@ select { width: 190px; height: 24px; font-size: 0.75rem; }
 /* error messages */
 label.error { display: block; grid-column: 2; text-align: left; text-transform: none; letter-spacing: 0; color: #c0392b; font-size: 0.8rem; margin-top: 2px; }
 input.error, select.error { border: 1px solid #c0392b; }
+
+/* PayPal selected: card information is blurred out */
+.card.blurred { filter: blur(3px); opacity: 0.6; pointer-events: none; }
+
+/* Shipping information */
+.same { display: block; text-align: left; text-transform: none; letter-spacing: 0; font-size: 1rem; margin-bottom: 12px; }
+#shippingFields { margin-top: 8px; }
+fieldset + fieldset { margin-top: 20px; }
